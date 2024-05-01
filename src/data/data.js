@@ -20,22 +20,22 @@ export const services = [
   {
     name: "Ajánlatkérők és ajánlattevők számára közbeszerzési - jogi tanácsadás",
     number: "#01",
-    img: "/1.svg",
+    img: "/4.svg",
   },
   {
     name: "Közbeszerzési eljárások előkésztése, lebonyolítása",
     number: "#02",
-    img: "/2.svg",
+    img: "/3.svg",
   },
   {
     name: "Közbeszerzési szabályzatok készítése",
     number: "#03",
-    img: "/3.svg",
+    img: "/1.svg",
   },
   {
     name: "Ajánlatok összeállításában közreműködés",
     number: "#04",
-    img: "/4.svg",
+    img: "/2.svg",
   },
 ];
 

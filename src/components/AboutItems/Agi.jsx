@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
-import photo from "../../../public/assets/about/Agi.png";
+import photo from "../../../public/assets/about/agi.png";
 
 const Agi = () => {
   return (

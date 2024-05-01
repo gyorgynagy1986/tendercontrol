@@ -4,6 +4,9 @@ import Image from "next/image";
 import { sections } from "@/data/data";
 import devider from "../../public/assets/devider/devider.svg";
 import Agi from "@/components/AboutItems/Agi";
+import Petra from "@/components/AboutItems/Petra";
+import Lorand from "@/components/AboutItems/Lorand";
+
 
 const About = () => {
   return (
@@ -15,9 +18,9 @@ const About = () => {
           <div>
             <Agi />
             <div className={Style.line}></div>
-            <Agi />
+            <Petra />
             <div className={Style.line}></div>
-            <Agi />
+            <Lorand />
           </div>
         </div>
       </div>
