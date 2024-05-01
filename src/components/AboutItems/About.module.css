@@ -1,0 +1,88 @@
+.section {
+  width: 100%;
+  position: relative;
+  background: var(--colorSection);
+}
+
+.container {
+  padding: 80px var(--padding) 80px var(--padding);
+  margin-inline: auto;
+  max-width: var(--maxWidth);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 30px 5vw 30px 5vw;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.row img {
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.row h2 {
+  font-size: var(--fsH2);
+  color: var(--colorH);
+  margin-bottom: var(--mbH);
+  font-weight: 600;
+  line-height: 42px;
+  text-align: center;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.contentContainer img {
+  width: 100%;
+  height: fit-content;
+  max-width: var(--imgSize);
+}
+
+.textContainer {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .contentContainer img {
+    max-width: 100%;
+  }
+
+  .textContainer {
+    padding: 20px 0px;
+  }
+}
+
+.textContainer p {
+  font-size: var(--fsAbout);
+  line-height: var(--lhFs);
+}
+
+.textContainer h4 {
+  font-size: var(--fsH3);
+  line-height: var(--lhH3);
+}
+
+.textContainer h5 {
+  font-size: var(--fsAbout);
+}

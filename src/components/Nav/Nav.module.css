@@ -1,44 +1,44 @@
 .section {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .container {
-    padding: 30px 5vw 0vw 5vw;
-    margin-inline: auto;
+  padding: 30px var(--padding) 0vw var(--padding);
+  margin-inline: auto;
+  max-width: 1900px;
 }
 
 .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-inline: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
 }
 
 .itemContainer {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .li {
-    color: var(--colorNav);
-    font-size: var(--fsNav);
-    font-weight: 500;
-    line-height: 15px;
-    text-align: center;
-
+  color: var(--colorNav);
+  font-size: var(--fsNav);
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
 }
 
 .button {
-    padding: 10px 30px 10px 30px;
-    background: var(--colorBtn);
-    border: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 15px;
-    text-align: center;
+  padding: 10px 30px 10px 30px;
+  background: var(--colorBtn);
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
 }
