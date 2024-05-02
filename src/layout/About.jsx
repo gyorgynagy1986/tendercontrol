@@ -7,7 +7,6 @@ import Agi from "@/components/AboutItems/Agi";
 import Petra from "@/components/AboutItems/Petra";
 import Lorand from "@/components/AboutItems/Lorand";
 
-
 const About = () => {
   return (
     <section className={Style.section}>

@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav/Nav";
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "700"] });
 
 export const metadata = {
   title: "Create Next App",

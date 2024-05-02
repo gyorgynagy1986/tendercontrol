@@ -1,12 +1,18 @@
 .section {
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 
-@media screen and (max-width: 600px) {
-  .section {
-    display: none;
-  }
+.vh100 {
+  height: 100vh;
+}
+
+.mobileMenu {
+  position: absolute;
+  background-color: rgb(255, 252, 252);
+  height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -38,13 +44,28 @@
 }
 
 .button {
-  padding: 10px 30px 10px 30px;
+  padding: 8px 10px;
   background: var(--colorBtn);
   border: none;
   text-transform: uppercase;
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 15px;
   text-align: center;
+}
+
+.hambiOpen {
+  cursor: pointer;
+}
+
+.hambiPhotoContainer {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hambiCloseBg {
 }

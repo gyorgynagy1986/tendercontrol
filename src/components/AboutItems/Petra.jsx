@@ -2,10 +2,13 @@ import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
 import photo from "../../../public/assets/about/agi.png";
+import { IBM_Plex_Sans } from "next/font/google";
+
+const inter = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300", "700"] });
 
 const Agi = () => {
   return (
-    <div className={Style.contentContainer}>
+    <div className={`${Style.contentContainer} ${inter.className}`}>
       <Image src={photo} alt="Dr. Herczeg Ágnes" />
       <div className={Style.textContainer}>
         <div>
