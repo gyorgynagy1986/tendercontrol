@@ -25,7 +25,7 @@ const Nav = () => {
     <section className={`${Style.section} ${!hamiOpen && Style.vh100}`}>
       <div className={Style.container}>
         <div className={Style.row}>
-          <div>
+          <div className={Style.logoContainer}>
             <Image priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
@@ -43,7 +43,7 @@ const Nav = () => {
         </div>
       </div>
       <div className={`${!hamiOpen && Style.mobileMenu} ${!hamiOpen && Style.vh100}`}>
-        
+
       </div>
     </section>
   );
