@@ -16,7 +16,7 @@
 }
 
 .container {
-  padding: 30px var(--padding) 0vw var(--padding);
+  padding: 30px var(--padding);
   margin-inline: auto;
   max-width: 1900px;
 }
