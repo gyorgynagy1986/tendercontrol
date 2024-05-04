@@ -71,6 +71,13 @@
   .textContainer {
     padding: 20px 0px;
   }
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
 }
 
 .textContainer p {
@@ -79,10 +86,11 @@
 }
 
 .textContainer h4 {
-  font-size: var(--fsH3);
+  font-size: var(--fsH3Name);
   line-height: var(--lhH3);
 }
 
 .textContainer h5 {
   font-size: var(--fsAbout);
 }
+

@@ -10,7 +10,7 @@ const Agi = () => {
     <div className={`${Style.contentContainer} ${inter.className}`}>
       <Image src={photo} alt="Dr. Herczeg Ágnes" />
       <div className={Style.textContainer}>
-        <div>
+        <div className={Style.flexContainer}>
           <h4>Dr. Herczeg Ágnes</h4>
           <h5>Ügyvezető</h5>
         </div>

@@ -22,6 +22,7 @@
   --fsH1: 36px;
   --fsH2: 32px;
   --fsH3: 21px;
+  --fsH3Name: 21px;
   --fsServicesNum: 21px;
   --lhH3: 28px;
   --lhFs: 26px;
@@ -36,6 +37,7 @@
   :root {
     --mbH: 30px;
     --fsH3: 14px;
+    --fsH3Name: 21px;
     --fsH2: 21px;
     --lhH1: 28px;
     --fsH1: 24px;
@@ -48,6 +50,7 @@
   :root {
     --mbH: 30px;
     --fsH3: 24px;
+    --fsH3Name: 24px;
     --fsH2: 48px;
     --lhH1: 70px;
     --fsNav: 20px;
