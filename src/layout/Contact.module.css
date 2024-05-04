@@ -10,11 +10,6 @@
   max-width: var(--maxWidth);
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 30px 5vw 30px 5vw;
-  }
-}
 
 .row {
   display: flex;
@@ -68,23 +63,7 @@
   padding: 30px;
 }
 
-@media screen and (max-width: 600px) {
-    .flexContainer {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       gap: 40px;
-      }
 
-      .Container2 {
-        width: 100%;
-        padding: unset;
-      }
-      .Container1 {
-        width: 100%;
-        justify-content: unset;
-      }
-  }
 
 .row h2 {
   font-size: var(--fsH2);
@@ -111,6 +90,43 @@
   flex-direction: column;
   gap: 10px;
 }
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 30px 5vw 30px 5vw;
+      }
+
+    .flexContainer {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 40px;
+      }
+
+      .Container2 {
+        width: 100%;
+        padding: unset;
+      }
+      .Container1 {
+        width: 100%;
+        justify-content: unset;
+      }
+    
+      .textContainer {
+       width: 100%;
+      }
+
+      .imageContainer img {
+        max-width: 145px;
+      }
+
+      .imageContainer  {
+        margin-bottom: 0;
+      }
+
+    }
+
 
 /*FORM */
 
