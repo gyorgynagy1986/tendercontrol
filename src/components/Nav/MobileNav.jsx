@@ -39,9 +39,10 @@ const Nav = () => {
             <button className={Style.button}>{button}</button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}
-            >
+              onClick={habiHandeler}
+           >
               <Image
-                onClick={habiHandeler}
+                
                 className={Style.hambiOpen}
                 priority
                 src={hambiLogic}
