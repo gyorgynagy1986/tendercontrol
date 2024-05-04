@@ -6,6 +6,7 @@ import { sections } from "@/data/data";
 import Image from "next/image";
 import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
+import ButtonSpinner from "@/components/Util/ButtonSpinner"
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
@@ -13,13 +14,32 @@ const Contact = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [buttonSpinner, setButtonSpinner] = useState(true);
+  const [send, setsend] = useState("Üzenet Küldése");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", { fullName, email, message });
-    // You can add further processing, like sending the form data to a server
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setButtonSpinner(false);
+
+    try {
+      await fetch("api/email", {
+        method: "post",
+        body: JSON.stringify({ fullName, email, message }),
+      });
+
+      setEmail("");
+      setFullName("");
+      setMessage("");
+
+      setButtonSpinner(true);
+      setsend("Üzenet elküldve");
+    } catch (error) {
+      setButtonSpinner(true);
+      setsend("Valami hiba történt");
+      console.error("Error sending email:", error);
+    }
   };
+
 
   return (
     <section className={Style.section}>
@@ -79,7 +99,7 @@ const Contact = () => {
                 <div className={Style.formItemsContainer}>
                   <label htmlFor="message">Üzenet:</label>
                   <textarea
-                    className={Style.textarea}
+                    className={`${Style.textarea} ${exo.className}`}
                     id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
@@ -88,9 +108,15 @@ const Contact = () => {
                   />
                 </div>
                 <div className={Style.button}>
-                  <button className={Style.btn} type="submit">
-                    ÜZENET KÜLDÉSE
-                  </button>
+
+                {buttonSpinner ? (
+            <button className={Style.btn} type="submit">
+           {send}
+          </button>
+            ) : (
+              <ButtonSpinner />
+            )}
+
                 </div>
               </form>
             </div>
