@@ -23,13 +23,13 @@
   justify-content: center;
   align-items: center;
   background: #E6E9FF;
-  height: calc(100% - 71px);
+  height: calc(100dvh - 71px);
   width: 100%;
 }
 
 .navContainer {
   height: 60%;
-  width: 100%;
+  width: 100;
   display: flex;
   gap: 3rem;
   justify-content: center;
