@@ -86,6 +86,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .overflow-hidden {
   overflow-y: hidden;
 }

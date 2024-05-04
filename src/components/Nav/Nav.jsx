@@ -20,13 +20,15 @@ const Nav = () => {
             <Image priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
+            <ul>
             {nav.map((el, index) => (
-              <ul key={index}>
-                <Link className={`${Style.li} ${exo.className}`} href={el.link}>
+              <li>
+                <Link key={index} className={`${Style.li} ${exo.className}`} href={el.link}>
                   {el.name}
                 </Link>
-              </ul>
+              </li>
             ))}
+            </ul>
             <button className={`${Style.button} ${exo.className}`}>
               {button}
             </button>

@@ -20,7 +20,7 @@ const Services = () => {
               <div key={index} className={Style.itemsContainerItems}>
                 <Image width={80} height={80} src={el.img} alt={alt} />
                 <div className={Style.itemsContainerText}>
-                  <p>{el.number}</p>
+                  <span>{el.number}</span>
                   <h3>{el.name}</h3>
                 </div>
               </div>

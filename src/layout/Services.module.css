@@ -106,7 +106,7 @@
   text-align: left;
 }
 
-.itemsContainerText p {
+.itemsContainerText span {
   font-size: var(--fsServicesNum);
   font-weight: 400;
   line-height: 21px;

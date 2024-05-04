@@ -53,17 +53,17 @@ const Contact = () => {
                   <Image src={LogoWhite} alt={alt} />
                 </div>
                 <div>
-                  <h6 className={exo.className}>Cím</h6>
+                  <h3 className={exo.className}>Cím</h3>
                   <p>
                     6720 Szeged, <br /> Roosevelt tér 10-11., II. emelet 24.
                   </p>
                 </div>
                 <div>
-                  <h6 className={exo.className}>E-mail cím</h6>
+                  <h3 className={exo.className}>E-mail cím</h3>
                   <p>kozbeszerzes@tendercontrol.hu</p>
                 </div>
                 <div>
-                  <h6 className={exo.className}>Telefonszám</h6>
+                  <h3 className={exo.className}>Telefonszám</h3>
                   <a href="tel:+36302292104">+36 30 229 2104</a>
                 </div>
               </div>
