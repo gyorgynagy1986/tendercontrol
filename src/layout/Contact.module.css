@@ -161,6 +161,8 @@
 .button {
   display: flex;
   justify-content: flex-end;
+  max-width: 479px;
+
 }
 
 .btn {
@@ -175,3 +177,15 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .button {
+        justify-content: unset;
+        max-width: 100%;
+      
+      }
+
+    .btn {
+        width: 100%;
+      }
+ }
