@@ -4,13 +4,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export const POST = async (req, res) => {
+export const POST = async (req = NextRequest, res) => {
   try {
    
     const body = await req.json();    
-
-    console.log(body)
 
     const { fullName, email, message } = body;
 
@@ -27,11 +24,10 @@ export const POST = async (req, res) => {
       }),
     ];
 
-    const [data, toSender] = await Promise.all(dataPromises);
+    const [data] = await Promise.all(dataPromises);
 
-    res.status(200).json({ data, toSender });
     return new NextResponse(
-      JSON.stringify({ data, toSender }),
+      JSON.stringify({ data}),
       { status: 200 },
     );
   } catch (error) {
