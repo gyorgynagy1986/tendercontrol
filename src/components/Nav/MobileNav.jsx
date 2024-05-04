@@ -33,7 +33,7 @@ const Nav = () => {
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
-            <Image priority src={Logo} alt={alt} />
+            <Image width={110} height={30} priority  src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
             <button className={Style.button}>{button}</button>
