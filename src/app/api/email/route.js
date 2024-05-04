@@ -6,8 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const POST = async (req = NextRequest, res) => {
   try {
-   
-    const body = await req.json();    
+    const body = await req.json();
 
     const { fullName, email, message } = body;
 
@@ -26,10 +25,7 @@ export const POST = async (req = NextRequest, res) => {
 
     const [data] = await Promise.all(dataPromises);
 
-    return new NextResponse(
-      JSON.stringify({ data}),
-      { status: 200 },
-    );
+    return new NextResponse(JSON.stringify({ data }), { status: 200 });
   } catch (error) {
     return new NextResponse(
       JSON.stringify({ error: "Error processing request" }),

@@ -6,7 +6,7 @@ import { sections } from "@/data/data";
 import Image from "next/image";
 import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
-import ButtonSpinner from "@/components/Util/ButtonSpinner"
+import ButtonSpinner from "@/components/Util/ButtonSpinner";
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
@@ -39,7 +39,6 @@ const Contact = () => {
       console.error("Error sending email:", error);
     }
   };
-
 
   return (
     <section className={Style.section}>
@@ -108,15 +107,13 @@ const Contact = () => {
                   />
                 </div>
                 <div className={Style.button}>
-
-                {buttonSpinner ? (
-            <button className={Style.btn} type="submit">
-           {send}
-          </button>
-            ) : (
-              <ButtonSpinner />
-            )}
-
+                  {buttonSpinner ? (
+                    <button className={Style.btn} type="submit">
+                      {send}
+                    </button>
+                  ) : (
+                    <ButtonSpinner />
+                  )}
                 </div>
               </form>
             </div>

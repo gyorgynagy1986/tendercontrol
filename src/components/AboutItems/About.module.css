@@ -77,7 +77,6 @@
     flex-direction: column;
     gap: 15px;
   }
-
 }
 
 .textContainer p {
@@ -93,4 +92,3 @@
 .textContainer h5 {
   font-size: var(--fsAbout);
 }
-

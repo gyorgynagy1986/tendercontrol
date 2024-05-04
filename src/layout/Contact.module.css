@@ -10,7 +10,6 @@
   max-width: var(--maxWidth);
 }
 
-
 .row {
   display: flex;
   justify-content: center;
@@ -26,8 +25,6 @@
   display: flex;
   gap: 20px;
 }
-
-
 
 .Container1 {
   width: 50%;
@@ -63,8 +60,6 @@
   padding: 30px;
 }
 
-
-
 .row h2 {
   font-size: var(--fsH2);
   color: white;
@@ -91,42 +86,39 @@
   gap: 10px;
 }
 
-
 @media screen and (max-width: 600px) {
-    .container {
-        padding: 30px 5vw 30px 5vw;
-      }
+  .container {
+    padding: 30px 5vw 30px 5vw;
+  }
 
-    .flexContainer {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       gap: 40px;
-      }
+  .flexContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 
-      .Container2 {
-        width: 100%;
-        padding: unset;
-      }
-      .Container1 {
-        width: 100%;
-        justify-content: unset;
-      }
-    
-      .textContainer {
-       width: 100%;
-      }
+  .Container2 {
+    width: 100%;
+    padding: unset;
+  }
+  .Container1 {
+    width: 100%;
+    justify-content: unset;
+  }
 
-      .imageContainer img {
-        max-width: 145px;
-      }
+  .textContainer {
+    width: 100%;
+  }
 
-      .imageContainer  {
-        margin-bottom: 0;
-      }
+  .imageContainer img {
+    max-width: 145px;
+  }
 
-    }
-
+  .imageContainer {
+    margin-bottom: 0;
+  }
+}
 
 /*FORM */
 
@@ -162,7 +154,6 @@
   display: flex;
   justify-content: flex-end;
   max-width: 479px;
-
 }
 
 .btn {
@@ -179,13 +170,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    .button {
-        justify-content: unset;
-        max-width: 100%;
-      
-      }
+  .button {
+    justify-content: unset;
+    max-width: 100%;
+  }
 
-    .btn {
-        width: 100%;
-      }
- }
+  .btn {
+    width: 100%;
+  }
+}
