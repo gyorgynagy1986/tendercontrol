@@ -34,7 +34,7 @@ const Nav = () => {
               ))}
             </ul>
             <button className={`${Style.button} ${exo.className}`}>
-              {button}
+             <a href="#kapcsolat">{button}</a> 
             </button>
           </div>
         </div>

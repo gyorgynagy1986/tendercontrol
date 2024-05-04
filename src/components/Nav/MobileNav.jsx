@@ -36,7 +36,7 @@ const Nav = () => {
             <Image width={1100} height={300} priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
-            <button className={Style.button}>{button}</button>
+            <button className={Style.button}><a href="#kapcsolat">{button}</a> </button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}
               onClick={habiHandeler}
