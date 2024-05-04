@@ -5,6 +5,9 @@ import { alt } from "@/data/data";
 import { nav } from "@/data/data";
 import { button } from "@/data/data";
 import Style from "./Nav.module.css";
+import { Exo_2 } from "next/font/google";
+
+const exo = Exo_2({ subsets: ["latin"] });
 
 import Logo from "../../../public/assets/logo/logo.svg";
 
@@ -19,12 +22,14 @@ const Nav = () => {
           <div className={Style.itemContainer}>
             {nav.map((el, index) => (
               <ul key={index}>
-                <Link className={Style.li} href={el.link}>
+                <Link className={`${Style.li} ${exo.className}`} href={el.link}>
                   {el.name}
                 </Link>
               </ul>
             ))}
-            <button className={Style.button}>{button}</button>
+            <button className={`${Style.button} ${exo.className}`}>
+              {button}
+            </button>
           </div>
         </div>
       </div>

@@ -7,13 +7,16 @@ import Agi from "@/components/AboutItems/Agi";
 import Petra from "@/components/AboutItems/Petra";
 import Lorand from "@/components/AboutItems/Lorand";
 
+import { Exo_2 } from "next/font/google";
+const exo = Exo_2({ subsets: ["latin"] });
+
 const About = () => {
   return (
     <section className={Style.section}>
       <div className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt="#" />
-          <h2>{sections.section2}</h2>
+          <h2 className={exo.className}>{sections.section2}</h2>
           <div>
             <Agi />
             <div className={Style.line}></div>

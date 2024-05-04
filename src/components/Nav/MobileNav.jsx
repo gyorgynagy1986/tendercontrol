@@ -2,9 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { alt } from "@/data/data";
-import { nav } from "@/data/data";
 import { button } from "@/data/data";
 import Style from "./MobileNav.module.css";
 
@@ -30,7 +28,9 @@ const Nav = () => {
           </div>
           <div className={Style.itemContainer}>
             <button className={Style.button}>{button}</button>
-            <div className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}>
+            <div
+              className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}
+            >
               <Image
                 onClick={habiHandeler}
                 className={Style.hambiOpen}
@@ -42,9 +42,9 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      <div className={`${!hamiOpen && Style.mobileMenu} ${!hamiOpen && Style.vh100}`}>
-
-      </div>
+      <div
+        className={`${!hamiOpen && Style.mobileMenu} ${!hamiOpen && Style.vh100}`}
+      ></div>
     </section>
   );
 };

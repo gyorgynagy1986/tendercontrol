@@ -43,7 +43,7 @@
   border: none;
   text-transform: uppercase;
   color: white;
-  font-size: 15px;
+  font-size: var(--fsBtn);
   font-weight: 700;
   line-height: 15px;
   text-align: center;
