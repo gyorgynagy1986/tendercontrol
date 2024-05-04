@@ -75,7 +75,7 @@ const Contact = () => {
                 <div className={Style.formItemsContainer}>
                   <label htmlFor="fullName">Teljes név</label>
                   <input
-                    className={Style.input}
+                    className={`${Style.input} ${exo.className}`}
                     type="text"
                     id="fullName"
                     placeholder="Teljes név"
@@ -87,7 +87,7 @@ const Contact = () => {
                 <div className={Style.formItemsContainer}>
                   <label htmlFor="email">E-mail cím:</label>
                   <input
-                    className={Style.input}
+                    className={`${Style.input} ${exo.className}`}
                     type="email"
                     id="email"
                     placeholder="E-mail cím:"
