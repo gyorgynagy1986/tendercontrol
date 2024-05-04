@@ -95,7 +95,7 @@
 
 .logoContainer img {
   width: 110px;
-  height: 30px;
+  height: auto;
 }
 
 .container {
