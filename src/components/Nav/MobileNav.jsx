@@ -33,7 +33,7 @@ const Nav = () => {
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
-          <img src="/logoMobile.svg" alt="" />
+            <Image width={1100} height={300} priority  src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
             <button className={Style.button}>{button}</button>
