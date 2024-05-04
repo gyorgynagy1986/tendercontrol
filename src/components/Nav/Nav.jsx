@@ -9,7 +9,7 @@ import { Exo_2 } from "next/font/google";
 
 const exo = Exo_2({ subsets: ["latin"] });
 
-import Logo from "../../../public/assets/logo/logo.svg";
+import Logo from "../../../public/assets/logo/logo.png";
 
 const Nav = () => {
   return (

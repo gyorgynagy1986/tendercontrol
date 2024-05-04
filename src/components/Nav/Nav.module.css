@@ -22,6 +22,11 @@
   margin-inline: auto;
 }
 
+.row img {
+  width: 182px;
+  height: auto;
+}
+
 .itemContainer {
   display: flex;
   gap: 30px;
