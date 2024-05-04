@@ -11,15 +11,15 @@ const Agi = () => {
 
   return (
     <div className={`${Style.contentContainer} ${sans.className}`}>
-      <Image data-aos-once	  data-aos="fade-right" src={photo} alt="Dr. Herczeg Ágnes" />
+      <Image data-aos-once	  data-aos="fade" src={photo} alt="Dr. Herczeg Ágnes" />
       <div className={Style.textContainer}>
         <div>
         <h3  className={serif.className}>Dr. Piri Petra</h3>
         </div>
-        <p data-aos-once	 data-aos="fade-up" data-aos-delay="100" >
+        <p data-aos-once	 data-aos="fade" data-aos-delay="100" >
 
           Jogi diplomámat 2016-ban szereztem a Szegedi Tudományegyetemen.</p>
-          <p data-aos-once	 data-aos="fade-up" data-aos-delay="100" >
+          <p data-aos-once	 data-aos="fade" data-aos-delay="100" >
 
           Nappali tagozaton folytatott jogi tanulmányaim mellett, kiemelten
           fontosnak tartottam az elméletben megszerzett tudás gyakorlati
@@ -27,13 +27,13 @@ const Agi = () => {
           gyakornokként tevékenykedtem, ahol érintőlegesen foglalkoztam a
           közbeszerzési joggal is.
         </p>
-        <p data-aos-once	 data-aos="fade-up" data-aos-delay="100" >
+        <p data-aos-once	 data-aos="fade" data-aos-delay="100" >
 
           Tanulmányaim befejezését követően pedig egyértelművé vált számomra a
           közbeszerzési jogterület iránti elköteleződés, amellyel immár 8 éve
           foglalkozom.
         </p>
-        <p data-aos-once	 data-aos="fade-up" data-aos-delay="100" >
+        <p data-aos-once	 data-aos="fade" data-aos-delay="100" >
 
           2018-tól felelős akkreditált közbeszerzési tanácsadóként dolgoztam.
         </p>

@@ -15,7 +15,7 @@ const exo = Exo_2({ subsets: ["latin"] });
 
 const About = () => {
 
-  useAos({ duration: 1000 });
+  useAos({ duration: 1500 });
 
   return (
     <section className={Style.section}>
