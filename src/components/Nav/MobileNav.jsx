@@ -5,7 +5,7 @@ import Image from "next/image";
 import { alt } from "@/data/data";
 import { button } from "@/data/data";
 import Style from "./MobileNav.module.css";
-import Logo from "../../../public/assets/logo/logoMobile.svg";
+import Logo from "../../../public/assets/logo.png";
 import HambiOpen from "../../../public/assets/hambi/hambi.svg";
 import HambiClose from "../../../public/assets/hambi/close.svg";
 
