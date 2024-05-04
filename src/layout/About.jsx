@@ -13,7 +13,7 @@ const exo = Exo_2({ subsets: ["latin"] });
 const About = () => {
   return (
     <section className={Style.section}>
-      <div className={Style.container}>
+      <div id="rolunk" className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt="#" />
           <h2 className={exo.className}>{sections.section2}</h2>

@@ -10,8 +10,8 @@ export const titleH1 = "Professzionális közbeszerzési szaktanácsadás";
 // Nav
 
 export const nav = [
-  { name: "Szolgáltatásaink", link: "#" },
-  { name: "Rólunk", link: "#" },
+  { name: "Szolgáltatásaink", link: "#szolgaltatasok" },
+  { name: "Rólunk", link: "#rolunk" },
 ];
 
 // Services

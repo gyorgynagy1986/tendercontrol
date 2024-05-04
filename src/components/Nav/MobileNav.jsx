@@ -54,18 +54,18 @@ const Nav = () => {
      { !hamiOpen ? <div className={`${Style.mobileMenu} ${exo.className}`}>
         
         <div className={Style.navContainer}>
-          <a href="#">Szolgáltatásaink</a>
-          <a href="#">Rólunk</a>
+          <a onClick={habiHandeler} href="#szolgaltatasok">Szolgáltatásaink</a>
+          <a onClick={habiHandeler} href="#rolunk">Rólunk</a>
         </div>
 
       <div className={Style.footerContainer}>
-          <div>
+          <div className={Style.footerItemContainer}>
             <p>Tender Control Kft.</p>
             <p>2024</p>
           </div>
-          <div>
+          <div className={Style.footerItemContainer}>
             <p>Designed and developed by </p>
-            <a href="https://www.studiobromo.hu/">StudioBromo</a>
+            <a href="https://www.studiobromo.hu/">Studio Bromo</a>
           </div>
       </div>
       </div>  : ''}

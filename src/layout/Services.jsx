@@ -9,7 +9,7 @@ const exo = Exo_2({ subsets: ["latin"] });
 const Services = () => {
   return (
     <section className={Style.section}>
-      <div className={Style.container}>
+      <div id="szolgaltatasok" className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt="#" />
           <h2 className={exo.className}>{sections.section1}</h2>
