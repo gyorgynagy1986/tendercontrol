@@ -84,11 +84,11 @@
   line-height: var(--lhFs);
 }
 
-.textContainer h4 {
+.textContainer h3 {
   font-size: var(--fsH3Name);
   line-height: var(--lhH3);
 }
 
-.textContainer h5 {
+.textContainer span {
   font-size: var(--fsAbout);
 }

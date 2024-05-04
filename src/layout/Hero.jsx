@@ -4,6 +4,7 @@ import Style from "./Hero.module.css";
 import heroIamge from "../../public/assets/hero/hero.png";
 import Nav from "@/components/Nav/Nav";
 import MobileNav from "@/components/Nav/MobileNav";
+import {alt} from "@/data/data"
 
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
@@ -13,7 +14,7 @@ const Hero = () => {
     <section className={Style.section}>
       <Nav />
       <MobileNav />
-      <Image priority alt="iamge" className={Style.heroImage} src={heroIamge} />
+      <Image priority alt={alt} className={Style.heroImage} src={heroIamge} />
       <div className={Style.row}>
         <div className={Style.h1Container}>
           <h1 className={exo.className}>

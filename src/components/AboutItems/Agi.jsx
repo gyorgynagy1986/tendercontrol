@@ -11,8 +11,8 @@ const Agi = () => {
       <Image src={photo} alt="Dr. Herczeg Ágnes" />
       <div className={Style.textContainer}>
         <div className={Style.flexContainer}>
-          <h4>Dr. Herczeg Ágnes</h4>
-          <h5>Ügyvezető</h5>
+          <h3>Dr. Herczeg Ágnes</h3>
+          <span>Ügyvezető</span>
         </div>
         <p>
           Jogi diplomámat 2004-ben szereztem a Szegedi Tudományegyetemen, a

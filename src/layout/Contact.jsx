@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Style from "./Contact.module.css";
-import { sections } from "@/data/data";
+import { sections, alt } from "@/data/data";
 import Image from "next/image";
 import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
@@ -44,13 +44,13 @@ const Contact = () => {
     <section className={Style.section}>
       <div className={Style.container}>
         <div className={Style.row}>
-          <Image src={devider} alt="#" />
+          <Image src={devider} alt={alt} />
           <h2 className={exo.className}>{sections.section3}</h2>
           <div className={Style.flexContainer}>
             <div className={Style.Container1}>
               <div className={Style.textContainer}>
                 <div className={Style.imageContainer}>
-                  <Image src={LogoWhite} alt="#" />
+                  <Image src={LogoWhite} alt={alt} />
                 </div>
                 <div>
                   <h6 className={exo.className}>Cím</h6>

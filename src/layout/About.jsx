@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
-import { sections } from "@/data/data";
+import { sections, alt } from "@/data/data";
 import devider from "../../public/assets/devider/devider.svg";
 import Agi from "@/components/AboutItems/Agi";
 import Petra from "@/components/AboutItems/Petra";
@@ -15,7 +15,7 @@ const About = () => {
     <section className={Style.section}>
       <div id="rolunk" className={Style.container}>
         <div className={Style.row}>
-          <Image src={devider} alt="#" />
+          <Image src={devider} alt={alt} />
           <h2 className={exo.className}>{sections.section2}</h2>
           <div>
             <Agi />
