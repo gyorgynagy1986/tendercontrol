@@ -167,7 +167,13 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: all .20s ease-in-out;
 }
+
+.btn:hover {
+   background: var(--colorBtn2Hover);
+   color:#27aae1; ;
+  }
 
 @media screen and (max-width: 600px) {
   .button {

@@ -1,7 +1,13 @@
 :root {
   --maxWidth: 1900px;
   --colorNav: #2e388e;
+  --colorNavHover: #4655d4;
+
   --colorBtn: #2e388e;
+  --colorBtn2: #27aae1;
+  --colorBtnHover: #4655d4;
+  --colorBtn2Hover: white;
+
   --colorH: #2e388e;
   --colorSection: radial-gradient(
     75.68% 118.55% at 26.95% 62.25%,

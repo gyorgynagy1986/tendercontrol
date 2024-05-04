@@ -41,13 +41,23 @@
   align-items: center;
 }
 
+
+
+
 .li {
   color: var(--colorNav);
   font-size: var(--fsNav);
   font-weight: 500;
   line-height: 15px;
   text-align: center;
+  transition: all .20s ease-in-out;
+
 }
+
+.li:hover {
+  color: var(--colorNavHover);
+}
+
 
 .button {
   padding: 10px 30px 10px 30px;
@@ -59,4 +69,12 @@
   font-weight: 700;
   line-height: 15px;
   text-align: center;
+  cursor: pointer;
+  transition: all .20s ease-in-out;
+
 }
+
+.button:hover {
+  background: var(--colorBtnHover);
+}
+
