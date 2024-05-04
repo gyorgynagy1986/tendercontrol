@@ -77,6 +77,7 @@ const Contact = () => {
                     className={`${Style.input} ${exo.className}`}
                     type="text"
                     id="fullName"
+                    name="fullName"
                     placeholder="Teljes név"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
@@ -89,6 +90,7 @@ const Contact = () => {
                     className={`${Style.input} ${exo.className}`}
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="E-mail cím:"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -100,6 +102,7 @@ const Contact = () => {
                   <textarea
                     className={`${Style.textarea} ${exo.className}`}
                     id="message"
+                    name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
