@@ -86,7 +86,15 @@
 }
 
 .logoContainer {
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logoContainer img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
