@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import Image from "next/image";
 import { alt } from "@/data/data";
 import { button } from "@/data/data";
@@ -15,6 +15,14 @@ const exo = Exo_2({ subsets: ["latin"] });
 const Nav = () => {
   const [hamiOpen, setHambiOpen] = useState(true);
   const  hambiLogic = hamiOpen ? HambiOpen : HambiClose;
+
+  useEffect(() => {
+    if (!hamiOpen) {
+      document.documentElement.classList.add("overflow-hidden");
+    } else {
+      document.documentElement.classList.remove("overflow-hidden");
+    }
+  }, [hamiOpen]);
 
   const habiHandeler = () => {
     setHambiOpen((prevState) => !prevState);
