@@ -89,12 +89,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;;
 }
 
 
-.row img {
-  width: 100%;
-  height: auto;
+.logoContainer img {
+  position: absolute;
+  left: 0;
 }
 
 .container {
