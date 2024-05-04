@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #E6E9FF;
+  background: #e6e9ff;
   height: calc(100dvh - 71px);
   width: 100%;
 }
@@ -39,16 +39,14 @@
   font-weight: 500;
   line-height: 15px;
   text-align: center;
-  color: #2E388E;
-
-  
+  color: #2e388e;
 }
 
 .footerContainer {
   height: 40%;
   width: 100%;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +60,6 @@
 }
 
 .footerContainer p {
- 
   color: #777777;
   font-size: 14px;
   font-weight: 500;
@@ -81,7 +78,7 @@
   font-weight: 700;
   line-height: 18px;
   text-align: center;
-  color: #2E388E;
+  color: #2e388e;
   text-decoration: underline;
 }
 
@@ -89,9 +86,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;;
+  position: relative;
 }
-
 
 .logoContainer img {
   width: 110px;

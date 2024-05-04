@@ -2,16 +2,17 @@ import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
 import photo from "../../../public/assets/about/agi.png";
-import { IBM_Plex_Sans } from "next/font/google";
-const inter = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300", "700"] });
+import { IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
+const serif = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "700"] });
+const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300", "700"] });
 
 const Agi = () => {
   return (
-    <div className={`${Style.contentContainer} ${inter.className}`}>
+    <div className={`${Style.contentContainer} ${sans.className}`}>
       <Image src={photo} alt="Dr. Herczeg Ágnes" />
       <div className={Style.textContainer}>
         <div className={Style.flexContainer}>
-          <h3>Dr. Herczeg Ágnes</h3>
+          <h3 className={serif.className}>Dr. Herczeg Ágnes</h3>
           <span>Ügyvezető</span>
         </div>
         <p>

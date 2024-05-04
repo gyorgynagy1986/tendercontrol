@@ -1,6 +1,7 @@
 // General
 
-export const alt = "Tender Control Kft szeged közbeszerzés, pályázat, tanácsadás";
+export const alt =
+  "Tender Control Kft szeged közbeszerzés, pályázat, tanácsadás";
 export const button = "kapcsolat";
 
 // Title

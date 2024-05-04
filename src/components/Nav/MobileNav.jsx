@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { alt } from "@/data/data";
 import { button } from "@/data/data";
@@ -14,7 +14,7 @@ const exo = Exo_2({ subsets: ["latin"] });
 
 const Nav = () => {
   const [hamiOpen, setHambiOpen] = useState(true);
-  const  hambiLogic = hamiOpen ? HambiOpen : HambiClose;
+  const hambiLogic = hamiOpen ? HambiOpen : HambiClose;
 
   useEffect(() => {
     if (!hamiOpen) {
@@ -33,16 +33,15 @@ const Nav = () => {
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
-            <Image width={1100} height={300} priority  src={Logo} alt={alt} />
+            <Image width={1100} height={300} priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
             <button className={Style.button}>{button}</button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}
               onClick={habiHandeler}
-           >
+            >
               <Image
-                
                 className={Style.hambiOpen}
                 priority
                 src={hambiLogic}
@@ -52,24 +51,31 @@ const Nav = () => {
           </div>
         </div>
       </div>
-     { !hamiOpen ? <div className={`${Style.mobileMenu} ${exo.className}`}>
-        
-        <div className={Style.navContainer}>
-          <a onClick={habiHandeler} href="#szolgaltatasok">Szolgáltatásaink</a>
-          <a onClick={habiHandeler} href="#rolunk">Rólunk</a>
-        </div>
+      {!hamiOpen ? (
+        <div className={`${Style.mobileMenu} ${exo.className}`}>
+          <div className={Style.navContainer}>
+            <a onClick={habiHandeler} href="#szolgaltatasok">
+              Szolgáltatásaink
+            </a>
+            <a onClick={habiHandeler} href="#rolunk">
+              Rólunk
+            </a>
+          </div>
 
-      <div className={Style.footerContainer}>
-          <div className={Style.footerItemContainer}>
-            <p>Tender Control Kft.</p>
-            <p>2024</p>
+          <div className={Style.footerContainer}>
+            <div className={Style.footerItemContainer}>
+              <p>Tender Control Kft.</p>
+              <p>2024</p>
+            </div>
+            <div className={Style.footerItemContainer}>
+              <p>Designed and developed by </p>
+              <a href="https://www.studiobromo.hu/">Studio Bromo</a>
+            </div>
           </div>
-          <div className={Style.footerItemContainer}>
-            <p>Designed and developed by </p>
-            <a href="https://www.studiobromo.hu/">Studio Bromo</a>
-          </div>
-      </div>
-      </div>  : ''}
+        </div>
+      ) : (
+        ""
+      )}
     </section>
   );
 };

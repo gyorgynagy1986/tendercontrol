@@ -21,13 +21,17 @@ const Nav = () => {
           </div>
           <div className={Style.itemContainer}>
             <ul>
-            {nav.map((el, index) => (
-              <li>
-                <Link key={index} className={`${Style.li} ${exo.className}`} href={el.link}>
-                  {el.name}
-                </Link>
-              </li>
-            ))}
+              {nav.map((el, index) => (
+                <li>
+                  <Link
+                    key={index}
+                    className={`${Style.li} ${exo.className}`}
+                    href={el.link}
+                  >
+                    {el.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <button className={`${Style.button} ${exo.className}`}>
               {button}

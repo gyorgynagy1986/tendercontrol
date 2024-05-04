@@ -4,7 +4,7 @@ import Style from "./Hero.module.css";
 import heroIamge from "../../public/assets/hero/hero.webp";
 import Nav from "@/components/Nav/Nav";
 import MobileNav from "@/components/Nav/MobileNav";
-import {alt} from "@/data/data"
+import { alt } from "@/data/data";
 
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
