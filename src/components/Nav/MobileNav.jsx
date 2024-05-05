@@ -31,6 +31,10 @@ const NavMobile = ({ observ }) => {
     setHambiOpen((prevState) => !prevState);
   };
 
+  const defaultfunction = () => {
+   console.log('is this an easter egg ???')
+  };
+
   return (
     <section
       className={`${Style.section} ${!hamiOpen && Style.vh100} ${observ && Style.fixed}`}
@@ -41,7 +45,7 @@ const NavMobile = ({ observ }) => {
             <Image  onClick={() => router.push('/')} width={1100} height={300} priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
-            <button className={Style.button}>
+            <button  onClick={!hamiOpen ? habiHandeler : defaultfunction} className={Style.button}>
               <a href="/#kapcsolat">{button}</a>{" "}
             </button>
             <div
