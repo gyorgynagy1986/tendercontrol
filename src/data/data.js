@@ -15,7 +15,7 @@ export const nav = [
   { name: "Rólunk", link: "#rolunk" },
 ];
 
-// Services
+// Services //
 
 export const services = [
   {
