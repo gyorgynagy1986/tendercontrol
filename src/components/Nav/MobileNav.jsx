@@ -8,11 +8,14 @@ import Style from "./MobileNav.module.css";
 import Logo from "../../../public/assets/logo/logoMobile.png";
 import HambiOpen from "../../../public/assets/hambi/hambi.svg";
 import HambiClose from "../../../public/assets/hambi/close.svg";
+import { useRouter } from 'next/navigation'
 
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
-const NavMobile = ({observ}) => {
+const NavMobile = ({ observ }) => {
+  const router = useRouter()
+
   const [hamiOpen, setHambiOpen] = useState(true);
   const hambiLogic = hamiOpen ? HambiOpen : HambiClose;
 
@@ -29,14 +32,18 @@ const NavMobile = ({observ}) => {
   };
 
   return (
-    <section className={`${Style.section} ${!hamiOpen && Style.vh100} ${observ && Style.fixed}`}>
+    <section
+      className={`${Style.section} ${!hamiOpen && Style.vh100} ${observ && Style.fixed}`}
+    >
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
-            <Image width={1100} height={300} priority src={Logo} alt={alt} />
+            <Image  onClick={() => router.push('/')} width={1100} height={300} priority src={Logo} alt={alt} />
           </div>
           <div className={Style.itemContainer}>
-            <button className={Style.button}><a href="#kapcsolat">{button}</a> </button>
+            <button className={Style.button}>
+              <a href="/#kapcsolat">{button}</a>{" "}
+            </button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}
               onClick={habiHandeler}

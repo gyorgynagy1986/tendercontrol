@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React, {useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Style from "./Hero.module.css";
 import heroIamge from "../../public/assets/hero/hero.webp";
@@ -13,26 +13,26 @@ import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
 const Hero = () => {
-  const [stickyNav, setStickyNav] = useState(false)
+  useAos({ duration: 1500 });
 
+
+  const [stickyNav, setStickyNav] = useState(false);
   const menuRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setStickyNav(false)
+          setStickyNav(false);
         } else {
-          setStickyNav(true)
+          setStickyNav(true);
         }
       },
-      { rootMargin: '0px 10px 10px 10px' }
+      { rootMargin: "0px 10px 10px 10px" },
     );
 
     observer.observe(menuRef.current);
-
   }, []);
-
 
   return (
     <section ref={menuRef} className={Style.section}>

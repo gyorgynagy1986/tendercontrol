@@ -81,11 +81,9 @@
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
 
--moz-font-smoothing: antialiased;
--webkit-font-smoothing: antialiased;
--webkit-font-smoothing: subpixel-antialiased;
-
-
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 html,

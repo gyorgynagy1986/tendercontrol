@@ -142,9 +142,8 @@
   font-size: 16px;
 }
 
-
 .input::placeholder {
- color: #00000033;
+  color: #00000033;
 }
 
 .textarea {
@@ -176,14 +175,31 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: all .20s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-transform: uppercase;
 }
 
 .btn:hover {
-   background: var(--colorBtn2Hover);
-   color:#27aae1; ;
-  }
+  background: var(--colorBtn2Hover);
+  color: #27aae1;
+}
+
+
+.formItemsContainerCheck {
+  padding-bottom: 20px;
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.formItemsContainerCheck a {
+ text-decoration: underline;
+}
+
+.formItemsContainerCheck input {
+ width: 20px;
+ height: 20px;
+ }
 
 @media screen and (max-width: 600px) {
   .button {
@@ -195,4 +211,3 @@
     width: 100%;
   }
 }
-

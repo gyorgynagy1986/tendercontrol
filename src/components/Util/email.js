@@ -29,7 +29,7 @@ const styles = {
   },
 };
 
-const EmailTemplate = ({ firstName, message, email }) => (
+const EmailTemplate = ({ firstName, message, email, acceptedTerms }) => (
   <div style={styles.container}>
     <h1 style={styles.header}>Hello Tender Control Kft!</h1>
     <h2 style={styles.subHeader}>Üzenetet kaptál</h2>
@@ -42,6 +42,8 @@ const EmailTemplate = ({ firstName, message, email }) => (
     <p style={styles.paragraph}>
       <strong>Email cím:</strong> {email}
     </p>
+    {acceptedTerms ? <p style={styles.paragraph}>
+       Adatkezelési irányelvek elfogadva: <strong>IGEN</strong></p> : <p>Adatkezelési nincs elfogadva: kérjük törlje az emailt!</p>}
   </div>
 );
 

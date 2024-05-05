@@ -4,16 +4,16 @@ import { NextRequest, NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const POST = async (req = NextRequest, res ) => {
+export const POST = async (req = NextRequest, res) => {
   try {
     const body = await req.json();
 
-    const { fullName, email, message } = body;
+    const { fullName, email, message, acceptedTerms } = body;
 
     const commonEmailOptions = {
       from: "tendercontrol@studiobromo.hu",
       subject: "Üzenet érkezett",
-      react: EmailTemplate({ firstName: fullName, message, email }),
+      react: EmailTemplate({ firstName: fullName, message, email, acceptedTerms }),
     };
 
     const dataPromises = [

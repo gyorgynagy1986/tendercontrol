@@ -9,11 +9,10 @@
   background: white;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .buttoninsidespinner {
-   width: 100%;
+    width: 100%;
   }
-  
 }
 
 .buttoninsidespinner::after {

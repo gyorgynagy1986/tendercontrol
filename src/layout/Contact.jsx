@@ -8,11 +8,14 @@ import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
 import ButtonSpinner from "@/components/Util/ButtonSpinner";
 import useAos from "@/app/hooks/aos";
+import Link from "next/link";
 
-import { Exo_2, IBM_Plex_Sans, } from "next/font/google";
+import { Exo_2, IBM_Plex_Sans } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
-const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300","400","700"] });
-
+const sans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
 
 const Contact = () => {
   const [fullName, setFullName] = useState("");
@@ -20,9 +23,11 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [buttonSpinner, setButtonSpinner] = useState(true);
   const [send, setsend] = useState("Üzenet Küldése");
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+
+
 
   useAos({ duration: 1500 });
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -31,15 +36,16 @@ const Contact = () => {
     try {
       await fetch("api/email", {
         method: "post",
-        body: JSON.stringify({ fullName, email, message }),
+        body: JSON.stringify({ fullName, email, message, acceptedTerms }),
       });
 
       setEmail("");
       setFullName("");
       setMessage("");
       setsend("Üzenet elküldve");
+      setAcceptedTerms(false)
     } catch (error) {
-      console.log(error.message)
+      console.log(error.message);
       setsend("Valami hiba történt");
     } finally {
       setButtonSpinner(true);
@@ -51,9 +57,21 @@ const Contact = () => {
       <div id="kapcsolat" className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt={alt} />
-          <h2 data-aos="fade-up" data-aos-once  data-aos-delay="150" className={exo.className}>{sections.section3}</h2>
+          <h2
+            data-aos="fade-up"
+            data-aos-once
+            data-aos-delay="150"
+            className={exo.className}
+          >
+            {sections.section3}
+          </h2>
           <div className={Style.flexContainer}>
-            <div data-aos="fade-right" data-aos-once data-aos-delay="150" className={Style.Container1}>
+            <div
+              data-aos="fade-right"
+              data-aos-once
+              data-aos-delay="150"
+              className={Style.Container1}
+            >
               <div className={Style.textContainer}>
                 <div className={Style.imageContainer}>
                   <Image src={LogoWhite} alt={alt} />
@@ -75,7 +93,12 @@ const Contact = () => {
               </div>
             </div>
 
-            <div data-aos="fade-left" data-aos-once data-aos-delay="150" className={Style.Container2}>
+            <div
+              data-aos="fade-left"
+              data-aos-once
+              data-aos-delay="150"
+              className={Style.Container2}
+            >
               <form className={exo.className} onSubmit={handleSubmit}>
                 <div className={Style.formItemsContainer}>
                   <label htmlFor="fullName">Teljes név</label>
@@ -114,6 +137,20 @@ const Contact = () => {
                     required
                     placeholder="Üzenet"
                   />
+                </div>
+                <div className={Style.formItemsContainerCheck}>
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    checked={acceptedTerms}
+                    onChange={(e) => setAcceptedTerms(e.target.checked)}
+                    required
+                  />
+                  <label htmlFor="terms">
+                    Elfogadom az{" "}
+                    <Link href="/adatkezelesi-tajekoztato">Adatkezelési irányelvek</Link>
+                  </label>
                 </div>
                 <div className={Style.button}>
                   {buttonSpinner ? (
