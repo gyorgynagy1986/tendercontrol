@@ -82,13 +82,19 @@
 .textContainer p {
   font-size: var(--fsAbout);
   line-height: var(--lhFs);
+  color: #444444;
+
 }
 
 .textContainer h3 {
   font-size: var(--fsH3Name);
   line-height: var(--lhH3);
+  color: #444444;
+
 }
 
 .textContainer span {
   font-size: var(--fsAbout);
+  font-weight: bold;
+  color: #444444;
 }
