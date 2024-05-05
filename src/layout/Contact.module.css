@@ -142,12 +142,21 @@
   font-size: 16px;
 }
 
+
+.input::placeholder {
+ color: #00000033;
+}
+
 .textarea {
   min-height: 142px;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 16px;
   max-width: 479px;
+}
+
+.textarea::placeholder {
+  color: #00000033;
 }
 
 .button {
@@ -168,6 +177,7 @@
   border: none;
   cursor: pointer;
   transition: all .20s ease-in-out;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -185,3 +195,4 @@
     width: 100%;
   }
 }
+

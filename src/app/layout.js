@@ -1,7 +1,7 @@
 import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 
-const inter = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "700"] });
+const inter = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "600", "700"] });
 
 export const metadata = {
   title: "Közbeszerzési tanácsadás Szeged - Tender Control Kft",

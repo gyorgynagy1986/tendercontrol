@@ -9,8 +9,10 @@ import LogoWhite from "../../public/assets/logo/logoWhite.svg";
 import ButtonSpinner from "@/components/Util/ButtonSpinner";
 import useAos from "@/app/hooks/aos";
 
-import { Exo_2 } from "next/font/google";
+import { Exo_2, IBM_Plex_Sans, } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
+const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300","400","700"] });
+
 
 const Contact = () => {
   const [fullName, setFullName] = useState("");
@@ -79,7 +81,7 @@ const Contact = () => {
                 <div className={Style.formItemsContainer}>
                   <label htmlFor="fullName">Teljes név</label>
                   <input
-                    className={`${Style.input} ${exo.className}`}
+                    className={`${Style.input} ${sans.className}`}
                     type="text"
                     id="fullName"
                     name="fullName"
@@ -90,22 +92,22 @@ const Contact = () => {
                   />
                 </div>
                 <div className={Style.formItemsContainer}>
-                  <label htmlFor="email">E-mail cím:</label>
+                  <label htmlFor="email">E-mail cím</label>
                   <input
-                    className={`${Style.input} ${exo.className}`}
+                    className={`${Style.input} ${sans.className}`}
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="E-mail cím:"
+                    placeholder="E-mail cím"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
                 <div className={Style.formItemsContainer}>
-                  <label htmlFor="message">Üzenet:</label>
+                  <label htmlFor="message">Üzenet</label>
                   <textarea
-                    className={`${Style.textarea} ${exo.className}`}
+                    className={`${Style.textarea} ${sans.className}`}
                     id="message"
                     name="message"
                     value={message}

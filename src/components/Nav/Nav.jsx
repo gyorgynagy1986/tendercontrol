@@ -7,7 +7,7 @@ import { button } from "@/data/data";
 import Style from "./Nav.module.css";
 import { Exo_2 } from "next/font/google";
 
-const exo = Exo_2({ subsets: ["latin"] });
+const exo = Exo_2({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", ] });
 
 import Logo from "../../../public/assets/logo/logo.png";
 
