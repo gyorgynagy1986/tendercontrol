@@ -12,7 +12,7 @@ import HambiClose from "../../../public/assets/hambi/close.svg";
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
-const Nav = () => {
+const NavMobile = ({observ}) => {
   const [hamiOpen, setHambiOpen] = useState(true);
   const hambiLogic = hamiOpen ? HambiOpen : HambiClose;
 
@@ -29,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <section className={`${Style.section} ${!hamiOpen && Style.vh100}`}>
+    <section className={`${Style.section} ${!hamiOpen && Style.vh100} ${observ && Style.fixed}`}>
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
@@ -80,4 +80,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavMobile;

@@ -11,10 +11,10 @@ const exo = Exo_2({ subsets: ["latin"], weight: ["100", "200", "300", "400", "50
 
 import Logo from "../../../public/assets/logo/logo.png";
 
-const Nav = () => {
+const Nav = ({observ}) => {
   return (
-    <section className={Style.section}>
-      <div className={Style.container}>
+    <section className={`${Style.section} ${observ && Style.fixed}`}>
+      <div className={`${Style.container} ${observ && Style.paddingFix}`}>
         <div className={Style.row}>
           <div>
             <Image priority src={Logo} alt={alt} />
