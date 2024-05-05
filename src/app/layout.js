@@ -6,7 +6,6 @@ const inter = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "600", "700"]
 export const metadata = {
   title: "Közbeszerzési tanácsadás Szeged - Tender Control Kft",
   description: "Közbeszerzési tanácsadás",
-  icons: [{ rel: 'icon', url: '/favicon.ico' }],
 
 };
 
