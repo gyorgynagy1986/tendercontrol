@@ -37,13 +37,12 @@ const Contact = () => {
       setEmail("");
       setFullName("");
       setMessage("");
-
-      setButtonSpinner(true);
       setsend("Üzenet elküldve");
     } catch (error) {
-      setButtonSpinner(true);
+      console.log(error.message)
       setsend("Valami hiba történt");
-      console.error("Error sending email:", error);
+    } finally {
+      setButtonSpinner(true);
     }
   };
 
