@@ -27,7 +27,7 @@ const Contact = () => {
 
 
 
-  useAos({ duration: 1500, disable: window.innerWidth < 1024 });
+  useAos({ duration: 1500 });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
