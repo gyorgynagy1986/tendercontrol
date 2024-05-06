@@ -21,6 +21,13 @@
   align-self: center;
 }
 
+@media screen and (min-width: 1500px) {
+  .row img {
+    margin-bottom: 20px;
+   
+  }
+}
+
 .flexContainer {
   display: flex;
   gap: 20px;
@@ -45,14 +52,14 @@
   font-size: 15px;
   font-weight: 300;
   line-height: 26px;
-  color: #ffffffa5;
+  color:#FFFFFF;
 }
 
 .Container1 a {
   font-size: 15px;
   font-weight: 300;
   line-height: 26px;
-  color: #ffffffa5;
+  color: #FFFFFF;
 }
 
 .Container2 {

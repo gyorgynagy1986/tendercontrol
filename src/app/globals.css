@@ -62,9 +62,9 @@
     --fsNav: 20px;
     --fsH1: 56px;
     --fsServicesNum: 12px;
-    --lhH3: 45px;
+    --lhH3: 38px;
     --mbH: 100px;
-    --fsServicesNum: 26px;
+    --fsServicesNum: 22px;
     --fsAbout: 20px;
     --imgSize: 425px;
     --padding: 5vw;
@@ -76,6 +76,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 
   text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;

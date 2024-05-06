@@ -88,7 +88,7 @@
 .textContainer h3 {
   font-size: var(--fsH3Name);
   line-height: var(--lhH3);
-  color: #444444;
+  color: #000000;
 }
 
 .textContainer span {

@@ -27,6 +27,13 @@
   align-self: center;
 }
 
+@media screen and (min-width: 1500px) {
+  .row img {
+    margin-bottom: 20px;
+   
+  }
+}
+
 .row h2 {
   font-size: var(--fsH2);
   color: var(--colorH);

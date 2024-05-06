@@ -17,8 +17,8 @@ const About = () => {
   useAos({ duration: 1500 });
 
   return (
-    <section className={Style.section}>
-      <div id="rolunk" className={Style.container}>
+    <section id="rolunk" className={Style.section}>
+      <div  className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt={alt} />
           <h2 data-aos-once data-aos="fade" className={exo.className}>

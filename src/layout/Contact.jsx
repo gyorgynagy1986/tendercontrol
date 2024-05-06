@@ -27,7 +27,7 @@ const Contact = () => {
 
 
 
-  useAos({ duration: 1500 });
+  useAos({ duration: 1500, disable: window.innerWidth < 1024 });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -78,17 +78,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className={exo.className}>Cím</h3>
-                  <p>
+                  <p className={sans.className}>
                     6720 Szeged, <br /> Roosevelt tér 10-11., II. emelet 24.
                   </p>
                 </div>
                 <div>
                   <h3 className={exo.className}>E-mail cím</h3>
-                  <p>kozbeszerzes@tendercontrol.hu</p>
+                  <p className={sans.className} >kozbeszerzes@tendercontrol.hu</p>
                 </div>
                 <div>
                   <h3 className={exo.className}>Telefonszám</h3>
-                  <a href="tel:+36302292104">+36 30 229 2104</a>
+                  <a className={sans.className} href="tel:+36302292104">+36 30 229 2104</a>
                 </div>
               </div>
             </div>
