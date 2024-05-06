@@ -19,7 +19,7 @@ export const POST = async (req = NextRequest, res) => {
     const dataPromises = [
       resend.emails.send({
         ...commonEmailOptions,
-        to: ["hello@studiobromo.hu"],
+        to: ["herczeg@tendercontrol.hu"],
       }),
     ];
 
