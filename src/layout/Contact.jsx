@@ -93,6 +93,7 @@ const Contact = () => {
 
             <div
               data-aos="fade-left"
+              data-aos-duration="1500"
               data-aos-once
               data-aos-delay="150"
               className={Style.Container2}
