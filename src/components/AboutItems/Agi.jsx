@@ -28,7 +28,7 @@ const Agi = () => {
         </p>
         <p data-aos-once data-aos="fade" data-aos-duration="1500" data-aos-delay="100">
           2007-től hivatalos közbeszerzési tanácsadóként, majd 2015-től felelős
-          akkreditált közbeszerzési tanácsadóként dolgozom.
+          akkreditált közbeszerzési szaktanácsadóként dolgozom.
         </p>
         <p data-aos-once data-aos="fade" data-aos-duration="1500" data-aos-delay="100">
           Közel 10 évet tevékenykedtem felsőfokú képzésekben oktatóként, mely
