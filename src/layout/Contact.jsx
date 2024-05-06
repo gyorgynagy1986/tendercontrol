@@ -149,7 +149,7 @@ const Contact = () => {
                   />
                   <label htmlFor="terms">
                     Elfogadom az{" "}
-                    <Link href="/adatkezelesi-tajekoztato">Adatkezelési irányelvek</Link>
+                    <Link href="/adatkezelesi-tajekoztato">Adatkezelési irányelveket</Link>
                   </label>
                 </div>
                 <div className={Style.button}>
