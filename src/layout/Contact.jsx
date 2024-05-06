@@ -7,7 +7,6 @@ import Image from "next/image";
 import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
 import ButtonSpinner from "@/components/Util/ButtonSpinner";
-import useAos from "@/app/hooks/aos";
 import Link from "next/link";
 
 import { Exo_2, IBM_Plex_Sans } from "next/font/google";
@@ -25,9 +24,6 @@ const Contact = () => {
   const [send, setsend] = useState("Üzenet Küldése");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
-
-
-  useAos({ duration: 1500 });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -61,6 +57,7 @@ const Contact = () => {
             data-aos="fade-up"
             data-aos-once
             data-aos-delay="150"
+            data-aos-duration="1500"
             className={exo.className}
           >
             {sections.section3}
@@ -70,6 +67,7 @@ const Contact = () => {
               data-aos="fade-right"
               data-aos-once
               data-aos-delay="150"
+              data-aos-duration="1500"
               className={Style.Container1}
             >
               <div className={Style.textContainer}>
