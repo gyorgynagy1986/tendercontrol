@@ -95,7 +95,7 @@
 }
 
 .container {
-  padding: 20px var(--padding);
+  padding: 10px var(--padding);
   margin-inline: auto;
   max-width: 1900px;
 }

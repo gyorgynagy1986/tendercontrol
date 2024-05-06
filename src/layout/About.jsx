@@ -15,7 +15,7 @@ const exo = Exo_2({ subsets: ["latin"] });
 const About = () => {
 
   return (
-    <section id="rolunk" className={Style.section}>
+    <section className={Style.section}>
       <div  className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt={alt} />

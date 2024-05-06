@@ -43,9 +43,9 @@ const Nav = ({ observ }) => {
                 </li>
               ))}
             </ul>
-            <button className={`${Style.button} ${exo.className}`}>
-              <a href="/#kapcsolat">{button}</a>
-            </button>
+            <a href="/#kapcsolat"> <button className={`${Style.button} ${exo.className}`}>
+            {button}
+            </button></a>
           </div>
         </div>
       </div>
