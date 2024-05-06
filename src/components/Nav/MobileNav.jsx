@@ -46,7 +46,7 @@ const NavMobile = ({ observ }) => {
           </div>
           <div className={Style.itemContainer}>
             <button  onClick={!hamiOpen ? habiHandeler : defaultfunction} className={Style.button}>
-              <a href="/#kapcsolat">{button}</a>{" "}
+              <a className={Style.buttonA} href="/#kapcsolat">{button}</a>{" "}
             </button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}

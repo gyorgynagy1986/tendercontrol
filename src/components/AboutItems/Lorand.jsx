@@ -25,7 +25,7 @@ const Agi = () => {
         </div>
         <p data-aos-once data-aos="fade" data-aos-duration="1500" data-aos-delay="100">
           Jogi diplomámat 2016-ban szereztem a Szegedi Tudományegyetemen, majd
-          az élet úgy hozta, hogy rögtön munkába is az önkormányzati szférában,
+          az élet úgy hozta, hogy rögtön munkába is álltam az önkormányzati szférában,
           ahol több mint 7 évig közbeszerzési ügyintézőként tevékenykedtem.
         </p>
         <p data-aos-once data-aos="fade" data-aos-duration="1500" data-aos-delay="100">

@@ -67,7 +67,7 @@ const Contact = () => {
               data-aos="fade-right"
               data-aos-once
               data-aos-delay="150"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
               className={Style.Container1}
             >
               <div className={Style.textContainer}>
@@ -93,7 +93,7 @@ const Contact = () => {
 
             <div
               data-aos="fade-left"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
               data-aos-once
               data-aos-delay="150"
               className={Style.Container2}

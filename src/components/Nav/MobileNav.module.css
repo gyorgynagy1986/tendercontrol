@@ -124,15 +124,19 @@
 }
 
 .button {
-  padding: 8px 10px;
   background: var(--colorBtn);
   border: none;
   text-transform: uppercase;
   color: white;
+  padding: 8px 10px;
   font-size: 13px;
   font-weight: 700;
   line-height: 15px;
   text-align: center;
+}
+
+.buttonA {
+  padding: 8px 10px;
 }
 
 .hambiOpen {
