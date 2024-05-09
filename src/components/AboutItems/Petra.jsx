@@ -15,6 +15,8 @@ const Agi = () => {
         data-aos-duration="1500"
         src={photo}
         priority
+        width={760}
+        height={1156}
         placeholder="blur"
         alt="Dr. Piri Petra Tender Control Kft"
       />
