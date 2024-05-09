@@ -8,7 +8,6 @@ import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
 import ButtonSpinner from "@/components/Util/ButtonSpinner";
 import Link from "next/link";
-import Aos from "aos";
 
 import { Exo_2, IBM_Plex_Sans } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
