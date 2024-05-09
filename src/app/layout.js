@@ -8,7 +8,7 @@ const inter = IBM_Plex_Serif({
 
 export const metadata = {
   title: "Közbeszerzési tanácsadás Szeged - Tender Control Kft",
-  description: "Közbeszerzési tanácsadással foglalkozó cégünk közbeszerzési jogi szolgáltatást nyújt ajánlatkérők és ajánlattevők számára, felelős akkreditált közbeszerzési szaktanácsadói közreműködéssel",
+  description: "Közbeszerzési tanácsadással foglalkozó cégünk közbeszerzési jogi szolgáltatást nyújt ajánlatkérők és ajánlattevők számára, felelős akkreditált közbeszerzési szaktanácsadói közreműködéssel.",
 };
 
 export default function RootLayout({ children }) {

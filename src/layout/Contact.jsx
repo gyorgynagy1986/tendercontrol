@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import Style from "./Contact.module.css";
 import { sections, alt } from "@/data/data";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import devider from "../../public/assets/devider/devider2.svg";
 import LogoWhite from "../../public/assets/logo/logoWhite.svg";
 import ButtonSpinner from "@/components/Util/ButtonSpinner";
 import Link from "next/link";
+import Aos from "aos";
 
 import { Exo_2, IBM_Plex_Sans } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
@@ -23,7 +24,6 @@ const Contact = () => {
   const [buttonSpinner, setButtonSpinner] = useState(true);
   const [send, setsend] = useState("Üzenet Küldése");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
