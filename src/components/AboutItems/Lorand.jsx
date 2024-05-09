@@ -16,6 +16,7 @@ const Agi = () => {
         data-aos-duration="1500"
         placeholder="blur"
         data-aos="fade"
+        priority
         src={photo}
         alt="Dr. Magosi Lóránd Tender Control Kft"
       />

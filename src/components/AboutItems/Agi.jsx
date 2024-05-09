@@ -14,6 +14,7 @@ const Agi = () => {
         data-aos-onced
         placeholder="blur"
         data-aos="fade"
+        priority
         data-aos-duration="1500"
         src={photo}
         alt="Dr. Herczeg Ágnes Tender Control Kft"
