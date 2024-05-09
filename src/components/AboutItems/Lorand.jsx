@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
-import photo from "../../../public/assets/about/lorand.png";
+import photo from "../../../public/assets/about/lorand.jpg";
 import { IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 
 const serif = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "700"] });
@@ -14,10 +14,10 @@ const Agi = () => {
       <Image
         data-aos-once
         data-aos-duration="1500"
-        style={{ opacity: ".1" }}
+        placeholder="blur"
         data-aos="fade"
         src={photo}
-        alt="Dr. Herczeg Ágnes"
+        alt="Dr. Magosi Lóránd Tender Control Kft"
       />
       <div className={Style.textContainer}>
         <div>

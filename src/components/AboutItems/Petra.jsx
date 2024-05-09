@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./About.module.css";
 import Image from "next/image";
-import photo from "../../../public/assets/about/petra.png";
+import photo from "../../../public/assets/about/petra.jpg";
 import { IBM_Plex_Sans, IBM_Plex_Serif } from "next/font/google";
 const serif = IBM_Plex_Serif({ subsets: ["latin"], weight: ["300", "700"] });
 const sans = IBM_Plex_Sans({ subsets: ["latin"], weight: ["300", "700"] });
@@ -11,11 +11,11 @@ const Agi = () => {
     <div className={`${Style.contentContainer} ${sans.className}`}>
       <Image
         data-aos-once
-        style={{ opacity: ".1" }}
         data-aos="fade"
         data-aos-duration="1500"
         src={photo}
-        alt="Dr. Herczeg Ágnes"
+        placeholder="blur"
+        alt="Dr. Piri Petra Tender Control Kft"
       />
       <div className={Style.textContainer}>
         <div>
