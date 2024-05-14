@@ -1,5 +1,6 @@
 import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="hu">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+         <Analytics />
+    </body>
     </html>
   );
 }
