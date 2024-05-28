@@ -13,9 +13,6 @@ import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
 const Hero = () => {
-
-
-
   const [stickyNav, setStickyNav] = useState(false);
   const menuRef = useRef(null);
 
@@ -41,7 +38,11 @@ const Hero = () => {
       <Image priority alt={alt} className={Style.heroImage} src={heroIamge} />
       <div className={Style.row}>
         <div className={Style.h1Container}>
-          <h1 data-aos="fade" data-aos-duration="1500" className={exo.className}>
+          <h1
+            data-aos="fade"
+            data-aos-duration="1500"
+            className={exo.className}
+          >
             Professzionális <br /> közbeszerzési szaktanácsadás
           </h1>
         </div>

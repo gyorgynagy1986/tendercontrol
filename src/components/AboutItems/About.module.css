@@ -64,10 +64,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contentContainer img {
-    max-width: 100%;
-  }
-
   .textContainer {
     padding: 20px 0px;
   }
@@ -98,5 +94,4 @@
   font-weight: 500;
   line-height: 26px;
   text-align: left;
-
 }

@@ -8,13 +8,13 @@ import Style from "./MobileNav.module.css";
 import Logo from "../../../public/assets/logo/logoMobile.png";
 import HambiOpen from "../../../public/assets/hambi/hambi.svg";
 import HambiClose from "../../../public/assets/hambi/close.svg";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
 const NavMobile = ({ observ }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   const [hamiOpen, setHambiOpen] = useState(true);
   const hambiLogic = hamiOpen ? HambiOpen : HambiClose;
@@ -32,7 +32,7 @@ const NavMobile = ({ observ }) => {
   };
 
   const defaultfunction = () => {
-   console.log('is this an easter egg')
+    console.log("is this an easter egg");
   };
 
   return (
@@ -42,11 +42,23 @@ const NavMobile = ({ observ }) => {
       <div className={Style.container}>
         <div className={Style.row}>
           <div className={Style.logoContainer}>
-            <Image  onClick={() => router.push('/')} width={1100} height={300} priority src={Logo} alt={alt} />
+            <Image
+              onClick={() => router.push("/")}
+              width={1100}
+              height={300}
+              priority
+              src={Logo}
+              alt={alt}
+            />
           </div>
           <div className={Style.itemContainer}>
-            <button  onClick={!hamiOpen ? habiHandeler : defaultfunction} className={Style.button}>
-              <a className={Style.buttonA} href="/#kapcsolat">{button}</a>{" "}
+            <button
+              onClick={!hamiOpen ? habiHandeler : defaultfunction}
+              className={Style.button}
+            >
+              <a className={Style.buttonA} href="/#kapcsolat">
+                {button}
+              </a>{" "}
             </button>
             <div
               className={`${Style.hambiPhotoContainer} ${!hamiOpen && Style.hambiCloseBg}`}

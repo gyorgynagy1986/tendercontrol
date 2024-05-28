@@ -30,7 +30,6 @@
 @media screen and (min-width: 1500px) {
   .row img {
     margin-bottom: 20px;
-   
   }
 }
 
@@ -46,15 +45,6 @@
 .contentContainer {
   display: flex;
   width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  .contentContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .line {
@@ -77,8 +67,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contentContainer img {
-    max-width: 100%;
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .textContainer {

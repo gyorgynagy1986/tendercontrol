@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Style from "./Services.module.css";
 import Image from "next/image";
 import { services, sections, alt } from "@/data/data";
@@ -14,17 +14,26 @@ const sans = IBM_Plex_Sans({
 });
 
 const Services = () => {
-
-
   return (
     <section className={Style.section}>
       <div id="szolgaltatasok" className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt={alt} />
-          <h2 data-aos="fade-up" data-aos-offset="-200"	data-aos-duration="800" className={exo.className}>
+          <h2
+            data-aos="fade-up"
+            data-aos-offset="-200"
+            data-aos-duration="800"
+            className={exo.className}
+          >
             {sections.section1}
           </h2>
-          <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="800" data-aos-delay="150" className={Style.itemsContainer}>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-duration="800"
+            data-aos-delay="150"
+            className={Style.itemsContainer}
+          >
             {" "}
             {/* Key should be here */}
             {services.map((el, index) => (
@@ -35,14 +44,11 @@ const Services = () => {
                   <h3>{el.name}</h3>
                 </div>
               </div>
-              
             ))}
-                            <div  id="rolunk"></div>
-
+            <div id="rolunk"></div>
           </div>
         </div>
       </div>
-     
     </section>
   );
 };

@@ -7,38 +7,35 @@ import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
 import MobileNav from "@/components/Nav/MobileNav";
 
-
 const page = () => {
+  const [stickyNav, setStickyNav] = useState(false);
 
-    const [stickyNav, setStickyNav] = useState(false);
+  console.log(stickyNav);
 
-    console.log(stickyNav)
+  const menuRef = useRef(null);
 
-    const menuRef = useRef(null);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setStickyNav(false);
-          } else {
-            setStickyNav(true);
-          }
-        },
-        { rootMargin: "50px 50px 50px 50px" },
-      );
-  
-      observer.observe(menuRef.current);
-    }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStickyNav(false);
+        } else {
+          setStickyNav(true);
+        }
+      },
+      { rootMargin: "50px 50px 50px 50px" },
+    );
 
+    observer.observe(menuRef.current);
+  }, []);
 
   return (
     <>
-        <Nav observ={stickyNav} />
-        <MobileNav observ={stickyNav} />
+      <Nav observ={stickyNav} />
+      <MobileNav observ={stickyNav} />
       <main className="container">
-        <section  className="adatvedelem">
-          <div  ref={menuRef} className="process_main-head policy-margin">
+        <section className="adatvedelem">
+          <div ref={menuRef} className="process_main-head policy-margin">
             <h2 className="fs-4">Adatkezelő adatai</h2>
             <ul className="policy-txt mb-20">
               <li className="off-text-selection">
@@ -158,9 +155,9 @@ const page = () => {
             <p className="policy-txt">
               Az általunk gyűjtött személyes adatokat arra használjuk, hogy
               válaszoljunk a weboldalon található kapcsolatfelvételi űrlapon
-              keresztül érkező üzenetekre, kapcsolattartásra. A
-              személyes adatokat nem osztjuk meg harmadik felekkel, kivéve, ha
-              azt a törvény előírja.{" "}
+              keresztül érkező üzenetekre, kapcsolattartásra. A személyes
+              adatokat nem osztjuk meg harmadik felekkel, kivéve, ha azt a
+              törvény előírja.{" "}
             </p>
           </div>
           <div className="process_main-head policy-margin">

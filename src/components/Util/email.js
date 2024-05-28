@@ -42,8 +42,13 @@ const EmailTemplate = ({ firstName, message, email, acceptedTerms }) => (
     <p style={styles.paragraph}>
       <strong>Email cím:</strong> {email}
     </p>
-    {acceptedTerms ? <p style={styles.paragraph}>
-       Adatkezelési irányelvek elfogadva: <strong>IGEN</strong></p> : <p>Adatkezelési nincs elfogadva: kérjük törlje az emailt!</p>}
+    {acceptedTerms ? (
+      <p style={styles.paragraph}>
+        Adatkezelési irányelvek elfogadva: <strong>IGEN</strong>
+      </p>
+    ) : (
+      <p>Adatkezelési nincs elfogadva: kérjük törlje az emailt!</p>
+    )}
   </div>
 );
 

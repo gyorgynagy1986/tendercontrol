@@ -1,4 +1,3 @@
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +6,7 @@ import { nav } from "@/data/data";
 import { button } from "@/data/data";
 import Style from "./Nav.module.css";
 import { Exo_2 } from "next/font/google";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 const exo = Exo_2({
   subsets: ["latin"],
@@ -16,18 +15,21 @@ const exo = Exo_2({
 
 import Logo from "../../../public/assets/logo/logo.png";
 
-
-
-
 const Nav = ({ observ }) => {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <section className={`${Style.section} ${observ && Style.fixed}`}>
       <div className={`${Style.container} ${observ && Style.paddingFix}`}>
         <div className={Style.row}>
           <div>
-            <Image style={{cursor:'pointer'}} onClick={() => router.push('/')} priority src={Logo} alt={alt} />
+            <Image
+              style={{ cursor: "pointer" }}
+              onClick={() => router.push("/")}
+              priority
+              src={Logo}
+              alt={alt}
+            />
           </div>
           <div className={Style.itemContainer}>
             <ul>
@@ -43,9 +45,12 @@ const Nav = ({ observ }) => {
                 </li>
               ))}
             </ul>
-            <a href="/#kapcsolat"> <button className={`${Style.button} ${exo.className}`}>
-            {button}
-            </button></a>
+            <a href="/#kapcsolat">
+              {" "}
+              <button className={`${Style.button} ${exo.className}`}>
+                {button}
+              </button>
+            </a>
           </div>
         </div>
       </div>

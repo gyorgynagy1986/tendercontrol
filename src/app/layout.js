@@ -1,6 +1,6 @@
 import { IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -9,7 +9,8 @@ const inter = IBM_Plex_Serif({
 
 export const metadata = {
   title: "Közbeszerzési szaktanácsadás Szeged - Tender Control Kft",
-  description: "Közbeszerzési tanácsadással foglalkozó cégünk közbeszerzési jogi szolgáltatást nyújt ajánlatkérők és ajánlattevők számára, felelős akkreditált közbeszerzési szaktanácsadói közreműködéssel.",
+  description:
+    "Közbeszerzési tanácsadással foglalkozó cégünk közbeszerzési jogi szolgáltatást nyújt ajánlatkérők és ajánlattevők számára, felelős akkreditált közbeszerzési szaktanácsadói közreműködéssel.",
 };
 
 export default function RootLayout({ children }) {
@@ -17,8 +18,8 @@ export default function RootLayout({ children }) {
     <html lang="hu">
       <body className={inter.className}>
         {children}
-         <Analytics />
-    </body>
+        <Analytics />
+      </body>
     </html>
   );
 }

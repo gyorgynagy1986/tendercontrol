@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Style from "./Contact.module.css";
 import { sections, alt } from "@/data/data";
 import Image from "next/image";
@@ -38,7 +38,7 @@ const Contact = () => {
       setFullName("");
       setMessage("");
       setsend("Üzenet elküldve");
-      setAcceptedTerms(false)
+      setAcceptedTerms(false);
     } catch (error) {
       console.log(error.message);
       setsend("Valami hiba történt");
@@ -81,11 +81,15 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className={exo.className}>E-mail cím</h3>
-                  <p className={sans.className} >kozbeszerzes@tendercontrol.hu</p>
+                  <p className={sans.className}>
+                    kozbeszerzes@tendercontrol.hu
+                  </p>
                 </div>
                 <div>
                   <h3 className={exo.className}>Telefonszám</h3>
-                  <a className={sans.className} href="tel:+36302292104">+36 30 229 2104</a>
+                  <a className={sans.className} href="tel:+36302292104">
+                    +36 30 229 2104
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,7 +151,9 @@ const Contact = () => {
                   />
                   <label htmlFor="terms">
                     Elfogadom az{" "}
-                    <Link href="/adatkezelesi-tajekoztato">Adatkezelési irányelveket</Link>
+                    <Link href="/adatkezelesi-tajekoztato">
+                      Adatkezelési irányelveket
+                    </Link>
                   </label>
                 </div>
                 <div className={Style.button}>

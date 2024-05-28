@@ -13,13 +13,17 @@ import { Exo_2 } from "next/font/google";
 const exo = Exo_2({ subsets: ["latin"] });
 
 const About = () => {
-
   return (
     <section className={Style.section}>
-      <div  className={Style.container}>
+      <div className={Style.container}>
         <div className={Style.row}>
           <Image src={devider} alt={alt} />
-          <h2         data-aos-duration="1500" data-aos-once data-aos="fade" className={exo.className}>
+          <h2
+            data-aos-duration="1500"
+            data-aos-once
+            data-aos="fade"
+            className={exo.className}
+          >
             {sections.section2}
           </h2>
           <div>

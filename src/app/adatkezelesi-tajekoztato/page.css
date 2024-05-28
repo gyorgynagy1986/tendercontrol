@@ -1,58 +1,55 @@
 /* Az alapértelmezett stílusok */
 .adatvedelem {
-    font-family: Arial, sans-serif;
-  }
-  
-  .policy-margin {
-    margin-bottom: 20px;
-  }
-  
-  .fs-4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #4d4d4d;
-  }
-  
-  .policy-txt {
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .mb-20 {
-    margin-bottom: 20px;
-  }
-  
-  .off-text-selection {
-    user-select: none;
-  }
-  
-  .adatvedelem {
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    box-shadow:
-      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+  font-family: Arial, sans-serif;
+}
 
-  
-  .policy-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 1rem;
-   
+.policy-margin {
+  margin-bottom: 20px;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4d4d4d;
+}
+
+.policy-txt {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.off-text-selection {
+  user-select: none;
+}
+
+.adatvedelem {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.policy-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
-  
-  @media screen and (max-width:600px) {
-    .container {
-      padding-left:2vw;
-      padding-right:2vw;
-    }
-    
-  }
+}
