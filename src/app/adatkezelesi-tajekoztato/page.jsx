@@ -9,9 +9,7 @@ import MobileNav from "@/components/Nav/MobileNav";
 
 const page = () => {
   const [stickyNav, setStickyNav] = useState(false);
-
-  console.log(stickyNav);
-
+  
   const menuRef = useRef(null);
 
   useEffect(() => {

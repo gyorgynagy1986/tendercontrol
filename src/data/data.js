@@ -34,7 +34,7 @@ export const services = [
     img: "/1.svg",
   },
   {
-    name: "Ajánlatok összeállításában közreműködés",
+    name: "Ajánlatok összeállításában közreműködés, jogtanácsosi képviselet jogorvoslati eljárásokban",
     number: "#04",
     img: "/2.svg",
   },

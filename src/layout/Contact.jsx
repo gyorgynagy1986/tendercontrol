@@ -40,7 +40,6 @@ const Contact = () => {
       setsend("Üzenet elküldve");
       setAcceptedTerms(false);
     } catch (error) {
-      console.log(error.message);
       setsend("Valami hiba történt");
     } finally {
       setButtonSpinner(true);

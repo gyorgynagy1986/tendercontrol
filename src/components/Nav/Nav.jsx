@@ -34,7 +34,7 @@ const Nav = ({ observ }) => {
           <div className={Style.itemContainer}>
             <ul>
               {nav.map((el, index) => (
-                <li>
+                <li key={index}>
                   <Link
                     key={index}
                     className={`${Style.li} ${exo.className}`}

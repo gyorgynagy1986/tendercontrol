@@ -32,7 +32,6 @@ const NavMobile = ({ observ }) => {
   };
 
   const defaultfunction = () => {
-    console.log("is this an easter egg");
   };
 
   return (

@@ -26,7 +26,7 @@ const Agi = () => {
       <div className={Style.textContainer}>
         <div className={Style.flexContainer}>
           <h3 className={serif.className}>Dr. Herczeg Ágnes</h3>
-          <span lassName={sans.className}>Ügyvezető</span>
+          <span className={sans.className}>Ügyvezető</span>
         </div>
         <p
           data-aos-once
